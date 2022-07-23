@@ -15,10 +15,6 @@ module.exports = class extends Type {
         this.mergeOptions(defaultOptions)
     }
 
-    ready() {
-        this.forceNext().write()
-    }
-
     set(chr) {
         if (this.selected === true) {
             this.clear()
